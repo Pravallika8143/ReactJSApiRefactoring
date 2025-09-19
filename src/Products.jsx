@@ -18,9 +18,9 @@ function Products(){
                         <img src={product.image} style={{width:"200px",height:"200px"}} alt=""/>
                         <h4>{product.title.slice(0,20)}</h4>
                         <div>
+                            <i>Rs.{product.price}</i><br/>
                             {product.rating.rate} 
                             <i class="bi bi-star-fill"></i><br/>
-                            <i>Rs.{product.price}</i>
                         </div>
                         </li>
                 })
