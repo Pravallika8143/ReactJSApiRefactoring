@@ -8,7 +8,7 @@ function Products(){
     .then((res)=>res.json())
     .then ((data)=>{
         setProducts([...data])
-    });
+    })
    return (
     <div className="border border-5 p-2 m-2 border-info">
         <h1>Products Length:{products.length}</h1>
