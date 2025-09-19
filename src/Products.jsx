@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './Products.css'
+import './Products.css';
 
 function Products(){
     var[products,setProducts]=React.useState([])
