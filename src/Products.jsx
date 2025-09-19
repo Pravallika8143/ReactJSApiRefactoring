@@ -1,5 +1,6 @@
 import React from "react"
 import './Products.css'
+import Product from "./Product";
 
 function Products(){
     var[products,setProducts]=React.useState([])
@@ -14,15 +15,7 @@ function Products(){
         <ul className="products-list">
             {
                 products.map((product)=>{
-                    return <li>
-                        <img src={product.image} style={{width:"200px",height:"200px"}} alt=""/>
-                        <h4>{product.title.slice(0,20)}</h4>
-                        <div>
-                            <i>Rs.{product.price}</i><br/>
-                            {product.rating.rate} 
-                            <i class="bi bi-star-fill"></i><br/>
-                        </div>
-                        </li>
+                    return <Product a={product}></Product>
                 })
             }
         </ul>
